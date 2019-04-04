@@ -25,6 +25,10 @@ To use, do the following:
  - Enter http://localhost:3000/ for the URL
  - Authenticate with Spotify either via facebook or direct login
  - Click 'Get Data' for the timeframe of your choosing
+ - If all goes as planned you now have some data to play with in Tableau!
+ - Recommend using the Artist and Tracks Standard Connection it has curated joins
+ - To this I add the albums table and then I think that is everything thats here!
+
  
  ## Official Tableau WDC development tools and documentation
 Part of this references are included on the repository source code so you can make a code/documentation relationship. In order to run this WDC on the simulator you'll need to follow the SDK and simulator instructions. Once you get confident with the connector's code and documentation, I'd strongly suggest you to dive into the API documentation to acquire a deeper knowledge.
