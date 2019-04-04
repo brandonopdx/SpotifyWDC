@@ -14,9 +14,12 @@ To use, do the following:
 - run `npm install`
 - run `npm ci`
 - run `npm start` to make a build and start the local server
-- For more script options check the package.json scripts section
-- to run this on the simulator ( see simulator instructions on this file ), start the simulator and type http://localhost:8888/simulator/?src=http://localhost:3000/ on your browser
 
+
+## In Tableau
+ - Open a new workbook
+ - When prompted to connect to a file, choose More > Web Data Connector
+ - Enter http://localhost:3000/ for the URL
 
 ## Publishing to a server
 - Do not publish your .env file, instead
