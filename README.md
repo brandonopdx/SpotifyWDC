@@ -10,7 +10,7 @@ To use, do the following:
 - Create a .env files from .env.TEMPLATE
 - Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` with the `CLIENT_ID` provided by Spotify app
 - Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` with the `CLIENT_SECRET` provided by Spotify app
-- Navigate to the folder where you have all the cloned files
+- Navigate to the folder where you have all downloaded the files fom this repository
 - run `npm install`
 - run `npm ci`
 - run `npm start` to make a build and start the local server
