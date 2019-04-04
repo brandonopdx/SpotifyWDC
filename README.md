@@ -2,16 +2,17 @@
 
 To use, do the following:
 
-- run `npm install`
 - Create an app on spotify developer platform: https://developer.spotify.com/my-applications/#!/applications
-
-
+- Download this repository
 
 
 ## Local development:
 - Create a .env files from .env.TEMPLATE
 - Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` with the `CLIENT_ID` provided by Spotify app
 - Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` with the `CLIENT_SECRET` provided by Spotify app
+- Navigate to the folder where you have all the cloned files
+- run `npm install`
+- run `npm ci`
 - run `npm start` to make a build and start the local server
 - For more script options check the package.json scripts section
 - to run this on the simulator ( see simulator instructions on this file ), start the simulator and type http://localhost:8888/simulator/?src=http://localhost:3000/ on your browser
