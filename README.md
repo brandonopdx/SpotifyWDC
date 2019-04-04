@@ -3,13 +3,16 @@
 To use, do the following:
 
 - Create an app on spotify developer platform: https://developer.spotify.com/my-applications/#!/applications
+- You will need a client ID and a client secret in the next steps so make sure these are created
+- You will also want to add http://localhost:3000/callback to the Redirect URI's
 - Download this repository
 
 
-## Local development:
-- Create a .env files from .env.TEMPLATE
-- Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` with the `CLIENT_ID` provided by Spotify app
-- Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` with the `CLIENT_SECRET` provided by Spotify app
+## Local development (I have tested this for Mac only):
+- Create a .env files from .env.TEMPLATE.  This just copy the template and rename it `.env` 
+- If prompted, just say that this is OK!
+- In the env file: Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` with the `CLIENT_ID` provided by Spotify app
+- In the env file: Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` with the `CLIENT_SECRET` provided by Spotify app
 - Navigate to the folder where you have all downloaded the files fom this repository
 - run `npm install`
 - run `npm ci`
@@ -20,8 +23,19 @@ To use, do the following:
  - Open a new workbook
  - When prompted to connect to a file, choose More > Web Data Connector
  - Enter http://localhost:3000/ for the URL
+ - Authenticate with Spotify either via facebook or direct login
+ - Click 'Get Data' for the timeframe of your choosing
+ 
+ ## Official Tableau WDC development tools and documentation
+Part of this references are included on the repository source code so you can make a code/documentation relationship. In order to run this WDC on the simulator you'll need to follow the SDK and simulator instructions. Once you get confident with the connector's code and documentation, I'd strongly suggest you to dive into the API documentation to acquire a deeper knowledge.
+Here some usefull links to get started :P
+- [Get Started](http://tableau.github.io/webdataconnector/docs/)
+- [SDK / simulator](http://tableau.github.io/webdataconnector/docs/#get-the-wdc-sdk)
+- [Run the simulator](http://tableau.github.io/webdataconnector/docs/#run-the-simulator)
+- [API reference](http://tableau.github.io/webdataconnector/docs/api_ref)
+ 
 
-## Publishing to a server
+## Publishing to a server (I have not tested this)
 - Do not publish your .env file, instead
     - Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` environment variables with the `CLIENT_ID` provided by Spotify app
     - Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` environment variables with the `CLIENT_SECRET` provided by Spotify app
@@ -107,10 +121,4 @@ On the terminal type the following:
 Replace with your particular path to chrome if necessary.
 
 
-## Official Tableau WDC development tools and documentation
-Part of this references are included on the repository source code so you can make a code/documentation relationship. In order to run this WDC on the simulator you'll need to follow the SDK and simulator instructions. Once you get confident with the connector's code and documentation, I'd strongly suggest you to dive into the API documentation to acquire a deeper knowledge.
-Here some usefull links to get started :P
-- [Get Started](http://tableau.github.io/webdataconnector/docs/)
-- [SDK / simulator](http://tableau.github.io/webdataconnector/docs/#get-the-wdc-sdk)
-- [Run the simulator](http://tableau.github.io/webdataconnector/docs/#run-the-simulator)
-- [API reference](http://tableau.github.io/webdataconnector/docs/api_ref)
+
