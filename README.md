@@ -5,17 +5,16 @@ To use, do the following:
 - Create an app on spotify developer platform: https://developer.spotify.com/my-applications/#!/applications
 - You will need a client ID and a client secret in the next steps so make sure these are created
 - You will also want to add http://localhost:3000/callback to the Redirect URI's
-- Download this repository
+- Clone or Download this repository
 
 
 ## Local development (I have tested this for Mac only):
-- Create a .env files from .env.TEMPLATE.  This just copy the template and rename it `.env` 
-- If prompted, just say that this is OK!
+- Create a .env files from .env.TEMPLATE.  I recommend opening this file and then saving it as `.env` 
+- If prompted about using this name, just say that this is OK!
 - In the env file: Set `EPHEMERAL_CLIENT_ID` and `ENDURING_CLIENT_ID` with the `CLIENT_ID` provided by Spotify app
 - In the env file: Set `EPHEMERAL_CLIENT_SECRET` and `ENDURING_CLIENT_SECRET` with the `CLIENT_SECRET` provided by Spotify app
 - Navigate to the folder where you have all downloaded the files fom this repository
 - run `npm install`
-- run `npm ci`
 - run `npm start` to make a build and start the local server
 
 
